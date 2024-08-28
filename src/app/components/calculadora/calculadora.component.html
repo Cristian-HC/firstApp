@@ -1,0 +1,26 @@
+<div class="calculadora">
+  <div class="resultado">
+    <input type="text" value="{{ expresion }}" />
+  </div>
+  <div class="botones">
+    <button value="AC" (click)="reset()">AC</button>
+    <button (click)="changeExpresion('')">#</button>
+    <button (click)="changeExpresion('%')">%</button>
+    <button (click)="changeExpresion('/')" class="operandos">/</button>
+    <button (click)="changeExpresion('7')">7</button>
+    <button (click)="changeExpresion('8')">8</button>
+    <button (click)="changeExpresion('9')">9</button>
+    <button class="operandos" (click)="changeExpresion('*')">x</button>
+    <button (click)="changeExpresion('4')">4</button>
+    <button (click)="changeExpresion('5')">5</button>
+    <button (click)="changeExpresion('6')">6</button>
+    <button class="operandos" (click)="changeExpresion('-')">-</button>
+    <button (click)="changeExpresion('1')">1</button>
+    <button (click)="changeExpresion('2')">2</button>
+    <button (click)="changeExpresion('3')">3</button>
+    <button class="operandos" (click)="changeExpresion('+')">+</button>
+    <button class="span-2" (click)="changeExpresion('0')">0</button>
+    <button (click)="changeExpresion('.')">.</button>
+    <button class="operandos" (click)="calc()">=</button>
+  </div>
+</div>
