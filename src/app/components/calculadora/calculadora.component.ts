@@ -14,7 +14,7 @@ export class CalculadoraComponent {
     this.expresion = this.expresion.concat(str);
   }
   public calc():any{
-    this.expresion = eval(this.expresion);
+   //this.expresion = eval(this.expresion);
   }
   public reset():any{
     this.expresion = "";

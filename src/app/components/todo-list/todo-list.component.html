@@ -1,0 +1,4 @@
+<ul *ngFor="let item of todoList; let i = index">
+  <li>{{ item }}</li>
+  <button (click)="clickItem(item)" class="btn btn-primary">ver</button>
+</ul>

@@ -1,0 +1,80 @@
+header{
+    position: fixed;
+    z-index: 10;
+    top: 0%;
+    width: 100%;
+    padding: .5rem;
+}
+header h1{
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+.home-img{
+    position: relative;
+    display: inline-block;
+}
+.home-img::after{
+    content: '';
+    position: absolute;
+    top: 0%; bottom: 0;
+    left: 0%; right: 0%;
+    background: linear-gradient(to top, black 0%, rgba(0,0,0,1) 10%, transparent 100%); 
+
+}
+.home-img img{
+    width: 100%;
+}
+
+.home .genero {
+    background-color: black;
+    display: flex;
+    color: #eee;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+
+
+.home .genero li{
+    list-style:circle;
+    font-size: .8rem;
+}
+
+
+.navbar{
+    position: fixed;
+    background: black;
+    color: #eee;
+    bottom: 0%;
+    left: 0%; right: 0%;
+    padding: 1rem;
+}
+.navbar ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 0%;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #eee;
+}
+
+
+.catalogo{
+    background-color: black;
+    margin-bottom: 5rem;
+}
+
+.catalogo .pelicula img{
+    width: 100%;
+}
+
+.pelicula{
+    margin-bottom: 1rem;
+}
